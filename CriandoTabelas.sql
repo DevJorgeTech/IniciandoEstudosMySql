@@ -53,3 +53,18 @@ INSERT INTO estados (nome, sigla, regiao, populacao) VALUES
 ('Tocantins', 'TO', 'Norte', 1.57);
 
 SELECT * FROM estados
+
+
+-- as altera temporariamente o nome de um coluna neste caso da coluna "Nome"
+
+SELECT sigla, nome as "Nome do Estado" from estados WHERE regiao = "Sul"
+
+-- order by ordena uma coluna de várias maneiras por padrão é do menor para o maior
+
+SELECT sigla, nome as "Nome do Estado" from estados WHERE populacao >= 10 order by populacao
+
+-- desc no final de order by "Coluna" fará que a ordenação seja do maior para o menor
+
+SELECT sigla, nome as "Nome do Estado" from estados WHERE populacao >= 10 order by populacao desc
+
+
