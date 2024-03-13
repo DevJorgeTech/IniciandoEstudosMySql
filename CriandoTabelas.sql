@@ -24,3 +24,10 @@ values
 
 -- Inseridos vários dados de uma vez
 -- Obrigatório finalzar o comando com ;
+
+insert into estados (id, nome, sigla, regiao, populacao)
+values 
+(1000,"Novo","NV","Norte",0.21),
+(1001, 'NovoA','NA','Nordeste',0.8);
+
+select * from estados
